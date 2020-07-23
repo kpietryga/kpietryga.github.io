@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Portfolio - Krzysztof Pietryga">
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,400&display=swap"
+        rel="stylesheet">
 
     <title>Portofolio</title>
 </head>
@@ -13,29 +15,37 @@
 <body>
     <div class="wrapper">
         <nav>
-            <div>Portofolio</div>
+            <div class="titile"><a href="">Portofolio</a></div>
             <ul>
-                <li>Moje Projekty</li>
-                <li>O Mnie</li>
-                <li>Kontakt</li>
+                <li><a href="#portfolio">Moje Projekty</a></li>
+                <li><a href="#a">O Mnie</a></li>
+                <li><a href="#contact">Kontakt</a></li>
             </ul>
         </nav>
         <header>
-            <div class="foto"></div>
+            <div class="foto"><img src="img/moje.jpg" alt="Krzysztof Pietryga"></div>
             <div class="opis1">
                 <h1>Krzysztof Pietryga</h1>
-                <p>Sprawdz moje prace</p>
+
+                <p>Zaprszam do zapoznania się z moim portofio.</p>
             </div>
         </header>
-        <section class="portfolio"></section>
-        <div class="zdj"><img src="img/gwiazdy.jpg" alt=""></div>
-        <div class="zdj"><img src="img/gra.jpg" alt=""></div>
-        <div class="zdj"><img src="img/komentarze.jpg" alt=""></div>
-        <div class="zdj"><img src="img/Todolist.jpg" alt=""></div>
-        <div class="zdj"><img src="img/pracownicy.jpg" alt=""></div>
-        <div class="zdj"><img src="img/ostatni.jpg" alt=""></div>
+        <section id="portfolio">
+            <h1>Moje prace</h1>
 
-        <section class="About">
+            <div class="obrazy1">
+                <div class="zdj"><img src="img/gwiazdy.jpg" alt=""></div>
+                <div class="zdj"><img src="img/gra.jpg" alt=""></div>
+                <div class="zdj"><img src="img/komentarze.jpg" alt=""></div>
+            </div>
+            <div class="obrazy2">
+                <div class="zdj"><img src="img/Todolist.jpg" alt=""></div>
+                <div class="zdj"><img src="img/pracownicy.jpg" alt=""></div>
+                <div class="zdj"><img src="img/ostatni.jpg" alt=""></div>
+            </div>
+
+        </section>
+        <section id="a">
 
             <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet temporibus nisi, earum minus cum error
@@ -70,7 +80,7 @@
             </p>
 
         </section>
-        <section class="contact">
+        <section id="contact">
             <h1>Skontaktuj się ze mną</h1>
             <form action="push">
                 <p>Imię/Nazwa firmy</p>
