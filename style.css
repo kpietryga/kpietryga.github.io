@@ -42,7 +42,8 @@ body nav ul {
 }
 
 body header {
-  background: url(img/work2.jpg);
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), to(black)), url(img/work2.jpg);
+  background: linear-gradient(rgba(0, 0, 0, 0), black), url(img/work2.jpg);
   background-size: cover;
   height: 95vh;
   text-align: center;
@@ -69,14 +70,14 @@ body header .opis1 p {
 
 body section#portfolio {
   background-color: white;
+  color: #D2E4F7;
 }
 
 body section#portfolio h1 {
   text-align: center;
   padding: 30px;
   font-size: 30px;
-  color: #D2E4F7;
-  background-color: black;
+  color: black;
 }
 
 body section#portfolio .obrazy {
@@ -89,38 +90,72 @@ body section#portfolio .obrazy {
 }
 
 body section#portfolio .obrazy .z1 {
-  background: url(img/gwiazdy.jpg);
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.7))), url(img/gwiazdy.jpg);
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/gwiazdy.jpg);
 }
 
 body section#portfolio .obrazy .z2 {
-  background: url(img/gra.jpg);
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.7))), url(img/gra.jpg);
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/gra.jpg);
 }
 
 body section#portfolio .obrazy .z3 {
-  background: url(img/komentarze.jpg);
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.7))), url(img/komentarze.jpg);
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/komentarze.jpg);
 }
 
 body section#portfolio .obrazy .z4 {
-  background: url(img/Todolist.jpg);
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.7))), url(img/Todolist.jpg);
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/Todolist.jpg);
 }
 
 body section#portfolio .obrazy .z5 {
-  background: url(img/pracownicy.jpg);
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.7))), url(img/pracownicy.jpg);
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/pracownicy.jpg);
 }
 
 body section#portfolio .obrazy .z6 {
-  background: url(img/ostatni.jpg);
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.7))), url(img/ostatni.jpg);
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/ostatni.jpg);
 }
 
 body section#portfolio .obrazy .zdj {
   width: 30vw;
   height: 35vh;
+  background-color: black;
   border: 5px solid #2c3e50;
-  background-size: cover;
+  background-size: 120%;
+  -webkit-transition: 1s;
+  transition: 1s;
+  background-position: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-body section#portfolio .obrazy .zdj img {
-  width: 100%;
+body section#portfolio .obrazy .zdj:hover {
+  width: 30vw;
+  height: 35vh;
+  background-color: black;
+  border: 5px solid #2c3e50;
+  background-size: 100%;
+  background-position: center;
+}
+
+body section#portfolio .obrazy p {
+  text-align: center;
+  font-size: 25px;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  border: 1px #D2E4F7 solid;
+  letter-spacing: 2px;
+  width: 300px;
 }
 
 body section#a {
@@ -145,4 +180,51 @@ body section#a .opi {
 body section#a .opi div {
   margin: 60px;
   font-size: 20px;
+}
+
+body #contact {
+  padding: 20px;
+}
+
+body #contact h1 {
+  text-align: center;
+  padding: 20px;
+}
+
+body #contact .formularz {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body #contact .formularz p {
+  font-size: 20px;
+  padding: 10px;
+}
+
+body #contact .formularz button {
+  margin: 10px;
+}
+
+body #contact .formularz input {
+  width: 250px;
+  height: 30px;
+}
+
+body #contact .formularz textarea {
+  width: 250px;
+}
+
+body footer {
+  text-align: center;
+  background-color: black;
+  color: #D2E4F7;
+  padding: 30px;
 }

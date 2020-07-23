@@ -34,14 +34,26 @@
             <h1>Moje prace</h1>
 
             <div class="obrazy">
-                <div class="zdj z1"></div>
-                <div class="zdj z2"></div>
-                <div class="zdj z3"></div>
+                <div class="zdj z1">
+                    <p>Strona - Bootsrap</p>
+                </div>
+                <div class="zdj z2">
+                    <p>Gra przeglądarkowa</p>
+                </div>
+                <div class="zdj z3">
+                    <p>Panel komentarzy</p>
+                </div>
             </div>
             <div class="obrazy">
-                <div class="zdj z4"></div>
-                <div class="zdj z5"></div>
-                <div class="zdj z6"></div>
+                <div class="zdj z4">
+                    <p>Lista zadań</p>
+                </div>
+                <div class="zdj z5">
+                    <p>Pracownicy</p>
+                </div>
+                <div class="zdj z6">
+                    <p>Landing Page</p>
+                </div>
             </div>
 
         </section>
@@ -151,18 +163,51 @@
         </section>
         <section id="contact">
             <h1>Skontaktuj się ze mną</h1>
+            <script src="https://smtpjs.com/v3/smtp.js">
+                Email.send({
+                    Host: "smtp.yourisp.com",
+                    Username: "username",
+                    Password: "password",
+                    To: 'them@website.com',
+                    From: "you@isp.com",
+                    Subject: "This is the subject",
+                    Body: "And this is the body"
+                }).then(
+                    message => alert(message)
+                );
+            </script>
+
+
             <form action="push">
-                <p>Imię/Nazwa firmy</p>
-                <div><input type="text"></div>
-                <p>Adres e-mail:</p>
-                <div><input type="email"></div>
-                <p>Wiadmość:</p>
-                <div><textarea name="message" id="message" cols="30" rows="10"></textarea></div>
-                <button type="submit">Wyślij</button>
+                <div class="formularz">
+                    <p>Imię/Nazwa firmy:</p>
+                    <div><input type="text"></div>
+                    <p>Adres e-mail:</p>
+                    <div><input type="email"></div>
+                    <p>Wiadomość:</p>
+                    <div><textarea name="message" id="message" cols="30" rows="10"></textarea></div>
+                    <button type="submit">Wyślij</button>
+                </div>
             </form>
+
+            <script src="https://smtpjs.com/v3/smtp.js">
+                Email.send({
+                    Host: "smtp.yourisp.com",
+                    Username: "username",
+                    Password: "password",
+                    To: 'them@website.com',
+                    From: "you@isp.com",
+                    Subject: "This is the subject",
+                    Body: "And this is the body"
+                }).then(
+                    message => alert(message)
+                );
+            </script>
         </section>
         <footer>
             <p>&copy; Krzysztof Pietryga 2020</p>
+
+
         </footer>
     </div>
 </body>

@@ -36,22 +36,23 @@ body {
     }
 
     header {
-        background: url(img/work2.jpg);
+        background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 1)), url(img/work2.jpg);
         background-size: cover;
         height: 95vh;
         text-align: center;
-
         color: #D2E4F7;
 
 
         div.foto {
             padding-top: 20vh;
+
         }
 
         img {
             border-radius: 50%;
             width: 250px;
             height: 250px;
+
         }
 
         .opis1 {
@@ -67,13 +68,14 @@ body {
     section#portfolio {
 
         background-color: white;
+        color: #D2E4F7;
 
         h1 {
             text-align: center;
             padding: 30px;
             font-size: 30px;
-            color: #D2E4F7;
-            background-color: black;
+            color: black;
+            // background-color: black;
         }
 
         .obrazy {
@@ -82,44 +84,63 @@ body {
             margin: 20px 0;
 
             .z1 {
-                background: url(img/gwiazdy.jpg);
+                background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/gwiazdy.jpg);
             }
 
             .z2 {
-                background: url(img/gra.jpg);
+                background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/gra.jpg);
             }
 
             .z3 {
-                background: url(img/komentarze.jpg);
+                background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/komentarze.jpg);
             }
 
             .z4 {
-                background: url(img/Todolist.jpg);
+                background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/Todolist.jpg);
             }
 
             .z5 {
-                background: url(img/pracownicy.jpg);
+                background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/pracownicy.jpg);
             }
 
             .z6 {
-                background: url(img/ostatni.jpg);
+                background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/ostatni.jpg);
             }
 
             .zdj {
                 width: 30vw;
                 height: 35vh;
+                background-color: rgba(0, 0, 0, 50%);
                 border: 5px solid #2c3e50;
-                background-size: cover;
+                background-size: 120%;
+                transition: 1s;
+                background-position: center;
+                display: flex;
+                justify-content: center;
+                align-items: center;
 
-                img {
-                    width: 100%;
-                }
             }
 
+            .zdj:hover {
+                width: 30vw;
+                height: 35vh;
+                background-color: rgba(0, 0, 0, 50%);
+                border: 5px solid #2c3e50;
+                background-size: 100%;
+                background-position: center;
+            }
+
+            p {
+                text-align: center;
+                font-size: 25px;
+                background-color: rgba(0, 0, 0, 0.5);
+                padding: 20px;
+                border: 1px #D2E4F7 solid;
+                letter-spacing: 2px;
+                width: 300px;
+            }
 
         }
-
-
     }
 
     section#a {
@@ -146,6 +167,48 @@ body {
         }
 
 
+    }
+
+    #contact {
+        padding: 20px;
+
+        h1 {
+            text-align: center;
+            padding: 20px;
+        }
+
+        .formularz {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            p {
+                font-size: 20px;
+                padding: 10px;
+            }
+
+            button {
+                margin: 10px;
+            }
+
+            input {
+                width: 250px;
+                height: 30px;
+            }
+
+            textarea {
+                width: 250px;
+
+            }
+
+        }
+    }
+
+    footer {
+        text-align: center;
+        background-color: black;
+        color: #D2E4F7;
+        padding: 30px;
     }
 
 }
