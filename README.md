@@ -1,1 +1,1 @@
-# kpietryga-pierwsze
+# kpietryga.github.io
