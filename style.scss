@@ -37,10 +37,11 @@ body {
 
     header {
         background: url(img/work2.jpg);
+        background-size: cover;
         height: 95vh;
         text-align: center;
 
-        color: white;
+        color: #D2E4F7;
 
 
         div.foto {
@@ -65,22 +66,86 @@ body {
 
     section#portfolio {
 
+        background-color: white;
+
         h1 {
             text-align: center;
             padding: 30px;
             font-size: 30px;
-            color: #2c3e50;
+            color: #D2E4F7;
+            background-color: black;
         }
 
-        .obrazy1 {
+        .obrazy {
             display: flex;
             justify-content: space-around;
+            margin: 20px 0;
 
-            .zdj img {
+            .z1 {
+                background: url(img/gwiazdy.jpg);
+            }
+
+            .z2 {
+                background: url(img/gra.jpg);
+            }
+
+            .z3 {
+                background: url(img/komentarze.jpg);
+            }
+
+            .z4 {
+                background: url(img/Todolist.jpg);
+            }
+
+            .z5 {
+                background: url(img/pracownicy.jpg);
+            }
+
+            .z6 {
+                background: url(img/ostatni.jpg);
+            }
+
+            .zdj {
                 width: 30vw;
+                height: 35vh;
+                border: 5px solid #2c3e50;
+                background-size: cover;
+
+                img {
+                    width: 100%;
+                }
+            }
+
+
+        }
+
+
+    }
+
+    section#a {
+        background-color: black;
+        color: #D2E4F7;
+        text-align: justify;
+        padding: 20px;
+
+        h1 {
+            text-align: center;
+            margin: 20px;
+            font-size: 30px;
+
+        }
+
+        .opi {
+            display: flex;
+
+            div {
+                margin: 60px;
+                font-size: 20px;
+                ;
             }
         }
 
 
     }
+
 }

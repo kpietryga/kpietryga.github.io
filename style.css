@@ -43,9 +43,10 @@ body nav ul {
 
 body header {
   background: url(img/work2.jpg);
+  background-size: cover;
   height: 95vh;
   text-align: center;
-  color: white;
+  color: #D2E4F7;
 }
 
 body header div.foto {
@@ -66,21 +67,82 @@ body header .opis1 p {
   margin-top: 20px;
 }
 
+body section#portfolio {
+  background-color: white;
+}
+
 body section#portfolio h1 {
   text-align: center;
   padding: 30px;
   font-size: 30px;
-  color: #2c3e50;
+  color: #D2E4F7;
+  background-color: black;
 }
 
-body section#portfolio .obrazy1 {
+body section#portfolio .obrazy {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  margin: 20px 0;
 }
 
-body section#portfolio .obrazy1 .zdj img {
+body section#portfolio .obrazy .z1 {
+  background: url(img/gwiazdy.jpg);
+}
+
+body section#portfolio .obrazy .z2 {
+  background: url(img/gra.jpg);
+}
+
+body section#portfolio .obrazy .z3 {
+  background: url(img/komentarze.jpg);
+}
+
+body section#portfolio .obrazy .z4 {
+  background: url(img/Todolist.jpg);
+}
+
+body section#portfolio .obrazy .z5 {
+  background: url(img/pracownicy.jpg);
+}
+
+body section#portfolio .obrazy .z6 {
+  background: url(img/ostatni.jpg);
+}
+
+body section#portfolio .obrazy .zdj {
   width: 30vw;
+  height: 35vh;
+  border: 5px solid #2c3e50;
+  background-size: cover;
+}
+
+body section#portfolio .obrazy .zdj img {
+  width: 100%;
+}
+
+body section#a {
+  background-color: black;
+  color: #D2E4F7;
+  text-align: justify;
+  padding: 20px;
+}
+
+body section#a h1 {
+  text-align: center;
+  margin: 20px;
+  font-size: 30px;
+}
+
+body section#a .opi {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+body section#a .opi div {
+  margin: 60px;
+  font-size: 20px;
 }
