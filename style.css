@@ -104,7 +104,7 @@ body section#portfolio h1 {
 }
 
 body section#portfolio .linia {
-  width: 40%;
+  width: 300px;
   display: block;
   margin: 0 auto;
 }
@@ -217,13 +217,20 @@ body section#a .opi div {
   font-size: 20px;
 }
 
+body section#a .opi .o1 {
+  text-align: center;
+}
+
+body section#a .opi .o2 p {
+  padding: 10px;
+}
+
 body #contact {
   padding: 20px;
 }
 
 body #contact h1 {
   text-align: center;
-  padding: 20px;
 }
 
 body #contact .formularz {
@@ -255,6 +262,12 @@ body #contact .formularz input {
 
 body #contact .formularz textarea {
   width: 250px;
+}
+
+body #contact .linia {
+  width: 300px;
+  display: block;
+  margin: 0 auto;
 }
 
 body footer {
@@ -315,12 +328,19 @@ body footer {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   body section#a .opi div {
     margin: 10px;
     font-size: 20px;
   }
-  body section#a .o2 {
-    display: none;
+  body section#a .o1 {
+    text-align: center;
+  }
+  body section#a .o1 img {
+    width: 100%;
   }
 }

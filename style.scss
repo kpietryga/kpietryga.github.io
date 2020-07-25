@@ -102,7 +102,7 @@ body {
         }
 
         .linia {
-            width: 40%;
+            width: 300px;
             display: block;
             margin: 0 auto;
         }
@@ -198,7 +198,16 @@ body {
                 font-size: 20px;
                 ;
             }
+
+            .o1 {
+                text-align: center;
+            }
+
+            .o2 p {
+                padding: 10px;
+            }
         }
+
 
 
     }
@@ -208,7 +217,7 @@ body {
 
         h1 {
             text-align: center;
-            padding: 20px;
+
         }
 
         .formularz {
@@ -235,6 +244,14 @@ body {
 
             }
 
+
+
+        }
+
+        .linia {
+            width: 300px;
+            display: block;
+            margin: 0 auto;
         }
     }
 
@@ -305,24 +322,24 @@ body {
 
             .opi {
                 display: flex;
+                flex-direction: column;
+
 
                 div {
                     margin: 10px;
                     font-size: 20px;
                     ;
                 }
-
-
-
             }
 
-            .o2 {
-                display: none;
+            .o1 {
+                text-align: center;
+
+                img {
+                    width: 100%;
+                }
             }
+
         }
-
-
     }
-
-
 }
