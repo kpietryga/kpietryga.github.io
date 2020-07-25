@@ -163,39 +163,50 @@
         </section>
         <section id="contact">
             <h1>Skontaktuj się ze mną</h1>
-            <script src="https://smtpjs.com/v3/smtp.js">
-                Email.send({
-                    Host: "smtp.yourisp.com",
-                    Username: "username",
-                    Password: "password",
-                    To: 'them@website.com',
-                    From: "you@isp.com",
-                    Subject: "This is the subject",
-                    Body: "And this is the body"
-                }).then(
-                    message => alert(message)
-                );
+
+            <div class="formularz">
+                <p>Imię/Nazwa firmy:</p>
+                <div><input type="text" id="name"></div>
+                <p>Adres e-mail:</p>
+                <div><input type="email" id="email"></div>
+                <p>Temat wiadmości</p>
+                <div><input type="text" id="temat"></div>
+                <p>Wiadomość:</p>
+                <div><textarea name="message" id="wiadomosc" cols="30" rows="10"></textarea></div>
+                <button type="submit" onclick="send()">Wyślij</button>
+            </div>
+
+
+            <script src="https://smtpjs.com/v3/smtp.js"></script>
+            <script>
+                function send() {
+
+                    let email = document.getElementById("email").value;
+                    let name = document.getElementById("name").value;
+                    let temat = document.getElementById("temat").value;
+                    let wiadomosc = document.getElementById("wiadomosc").value;
+                    console.log(email);
+
+                    Email.send({
+                        SecureToken: "618980ad-8a76-4398-9b62-f85c80c746b9",
+                        To: 'krzytestowy@gmail.com',
+                        From: email,
+                        Subject: temat + name,
+                        Body: wiadomosc,
+                    }).then(
+                        message => alert(message)
+                    );
+                };
             </script>
 
-
-            <form action="push">
-                <div class="formularz">
-                    <p>Imię/Nazwa firmy:</p>
-                    <div><input type="text"></div>
-                    <p>Adres e-mail:</p>
-                    <div><input type="email"></div>
-                    <p>Wiadomość:</p>
-                    <div><textarea name="message" id="message" cols="30" rows="10"></textarea></div>
-                    <button type="submit">Wyślij</button>
-                </div>
-            </form>
-
+        </section>
+        <footer>
 
 
             <p>&copy; Krzysztof Pietryga 2020</p>
 
 
-            </footer>
+        </footer>
     </div>
 </body>
 
