@@ -9,6 +9,11 @@ body {
     // background-color: green;
     font-family: 'Lato', sans-serif;
 
+
+
+
+
+
     nav {
         position: sticky;
         top: 0px;
@@ -19,6 +24,9 @@ body {
         background-color: #2c3e50;
         color: white;
 
+        .burger {
+            display: none;
+        }
 
 
         a {
@@ -211,5 +219,64 @@ body {
         padding: 30px 0;
         margin: 0;
     }
+
+}
+
+@media screen and (max-width: 800px) {
+    body {
+
+
+        nav {
+            ul {
+                display: none;
+            }
+
+            .burger {
+                display: block;
+            }
+        }
+
+        section#portfolio {
+            .obrazy {
+                flex-direction: column;
+                width: 100%;
+                margin: 0px;
+
+                .zdj {
+                    width: 95%;
+                    flex-direction: column;
+                    margin: 10px auto;
+
+                    p {
+                        font-size: 15px;
+                    }
+                }
+
+            }
+
+
+        }
+
+        section#a {
+
+            .opi {
+                display: flex;
+
+                div {
+                    margin: 10px;
+                    font-size: 20px;
+                    ;
+                }
+
+            }
+
+            .o2 {
+                display: none;
+            }
+        }
+
+
+    }
+
 
 }

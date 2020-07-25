@@ -26,6 +26,10 @@ body nav {
   color: white;
 }
 
+body nav .burger {
+  display: none;
+}
+
 body nav a {
   text-decoration: none;
   color: white;
@@ -228,4 +232,44 @@ body footer {
   color: #D2E4F7;
   padding: 30px 0;
   margin: 0;
+}
+
+@media screen and (max-width: 800px) {
+  body nav ul {
+    display: none;
+  }
+  body nav .burger {
+    display: block;
+  }
+  body section#portfolio .obrazy {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+    margin: 0px;
+  }
+  body section#portfolio .obrazy .zdj {
+    width: 95%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 10px auto;
+  }
+  body section#portfolio .obrazy .zdj p {
+    font-size: 15px;
+  }
+  body section#a .opi {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  body section#a .opi div {
+    margin: 10px;
+    font-size: 20px;
+  }
+  body section#a .o2 {
+    display: none;
+  }
 }
